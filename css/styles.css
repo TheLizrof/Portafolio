@@ -27,42 +27,42 @@
 }
 
 .q2 {
-    animation: floating 2.05s infinite, anim 5s infinite;
+    animation: floating 2.1s infinite, anim 5s infinite;
     animation-timing-function: ease-in-out;
     margin-top: 3px;
     margin-left: 3px;
 }
 
 .q3 {
-    animation: floating 2.10s infinite, anim 5s infinite;
+    animation: floating 2.2s infinite, anim 5s infinite;
     animation-timing-function: ease-in-out;
     margin-top: 3px;
     margin-left: 3px;
 }
 
 .q4 {
-    animation: floating 2.15s infinite, anim 5s infinite;
+    animation: floating 2.3s infinite, anim 5s infinite;
     animation-timing-function: ease-in-out;
     margin-top: 3px;
     margin-left: 3px;
 }
 
 .q5 {
-    animation: floating 2.20s infinite, anim 5s infinite;
+    animation: floating 2.4s infinite, anim 5s infinite;
     animation-timing-function: ease-in-out;
     margin-top: 3px;
     margin-left: 3px;
 }
 
 .q6 {
-    animation: floating  2.25s infinite, anim 5s infinite;
+    animation: floating  2.5s infinite, anim 5s infinite;
     animation-timing-function: ease-in-out;
     margin-top: 3px;
     margin-left: 3px;
 }
 
 .q7 {
-    animation: floating 2.30s infinite, anim 5s infinite;
+    animation: floating 2.6s infinite, anim 5s infinite;
     animation-timing-function: ease-in-out;
     margin-top: 3px;
     margin-left: 3px;
@@ -70,7 +70,7 @@
 
 @keyframes floating {
     0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 10px); }
+    50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }   
 }
 
@@ -83,10 +83,15 @@
 }
 
 h2{
-    font-family: 'ka1';
     font-size: 200%;
+    font-family: 'Press Start 2P';
     padding-top: 50px;
     font-weight: normal;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p{
@@ -106,6 +111,21 @@ button{
     padding: 5px;
     -webkit-tap-highlight-color: (0, 0, 0, 0);
 }
+
+.blink {
+    animation: blink-animation .8s steps(5, start) infinite;
+    -webkit-animation: blink-animation .8s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
 
 .pag1, .pag3, .pag5{
     background-color: #B3B3B3;
