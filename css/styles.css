@@ -96,9 +96,14 @@ h2{
 
 p{
     font-family: Silkscreen;
-    padding-top: 50%;
-    padding-bottom: 60%;
+    margin-top: 50%;
+    margin-bottom: 33%;
     font-size: 100%;
+}
+
+.w1{
+    border: 1px solid;
+    border-color: #B3B3B3;
 }
 
 button{
@@ -109,6 +114,7 @@ button{
     font-family: Silkscreen;
     cursor: pointer;
     padding: 5px;
+    margin-top: 25%;
     -webkit-tap-highlight-color: (0, 0, 0, 0);
 }
 
@@ -138,3 +144,15 @@ button{
     min-height: 640px;
     min-width: 360px;
 }
+
+.img_left {
+    max-width: 30%;
+    max-height: 30%;
+    float: left;
+   }
+
+.img_right {
+    max-width: 30%;
+    max-height: 30%;
+    float: right;
+   }
