@@ -5,6 +5,29 @@
     -webkit-tap-highlight-color: (0, 0, 0, 0);
     text-align: center;
     margin: 0;
+    border: 1px solid red;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.pag1, .pag3, .pag5{
+    background-color: #B3B3B3;
+    min-width: 300px;
+    max-width: 1920px;
+    min-height: 200px;
+    max-height: 1080px;
+    margin: auto;
+}
+
+.pag2, .pag4{
+    background-color: #757575;
+    min-width: 300px;
+    max-width: 1920px;
+    min-height: 200px;
+    max-height: 1080px;
+    margin: auto;
 }
 
 .ini{
@@ -95,23 +118,11 @@ h2{
 }
 
 p{
+    width: fit-content;
+    margin: 0 auto;
     font-family: Silkscreen;
-    margin-top: 50%;
-    margin-bottom: 33%;
     font-size: 100%;
 }
-
-.w1{
-    border: 1px solid;
-    border-color: #B3B3B3;
-}
-
-#typed{
-    font-family: Silkscreen;
-    margin-top: 50%;
-    margin-bottom: 33%;
-    font-size: 100%;
-}    
   
 button{
     color: red;
@@ -125,41 +136,17 @@ button{
     -webkit-tap-highlight-color: (0, 0, 0, 0);
 }
 
-.blink {
-    animation: blink-animation .8s steps(5, start) infinite;
-    -webkit-animation: blink-animation .8s steps(5, start) infinite;
-  }
-  @keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
-  @-webkit-keyframes blink-animation {
-    to {
-      visibility: hidden;
-    }
-  }
-
-.pag1, .pag3, .pag5{
-    background-color: #B3B3B3;
-    min-height: 640px;
-    min-width: 360px;
-}
-
-.pag2, .pag4{
-    background-color: #757575;
-    min-height: 640px;
-    min-width: 360px;
-}
-
 .img_left {
-    max-width: 30%;
-    max-height: 30%;
+    width: 20%;
+    min-width: 30px;
+    max-width: 300px;
     float: left;
-   }
+    box-sizing: border-box;
+}
 
 .img_right {
-    max-width: 30%;
-    max-height: 30%;
+    width: 20%;
+    min-width: 30px;
+    max-width: 300px;
     float: right;
-   }
+}
